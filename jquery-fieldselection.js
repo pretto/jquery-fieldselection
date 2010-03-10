@@ -46,7 +46,7 @@
 
 		replaceSelection: function() {
 
-			var e = (typeof this.id == 'function') ? this.get(0) : this;
+                        var e = (this.jquery) ? this[0] : this;
 			var text = arguments[0] || '';
 
 			return (
